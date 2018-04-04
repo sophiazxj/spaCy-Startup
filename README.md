@@ -12,3 +12,4 @@ spaCy provides a one-stop-shop for tasks commonly used in any NLP project, inclu
 + Sentence recognition
 + Word-to-vector transformations
 + Many convenient methods for cleaning and normalizing text
++ what?
