@@ -167,9 +167,10 @@ all_data_merge['review_length'] = all_data_merge.apply(review_text_length, axis 
 all_data_merge['Month'] = 'April'
 # TODO: change length
 length = 250
-all_data_merge = all_data_merge[all_data_merge['review_length'] < 250]
+# all_data_merge = all_data_merge[all_data_merge['review_length'] < 250]
 all_data_out = all_data_merge[clms]
 print(all_data_out.groupby('Store').size())
-
+print("Total No. for reviews: ")
+print(all_data_out.shape[0])
 # TODO: change file name
 all_data_out.to_csv("C:\\Users\\janney.zhang\\Desktop\\work\\projects\\Nestle\\2018\\reviews\\nestle_April.csv", index = False, encoding = 'utf-8')
